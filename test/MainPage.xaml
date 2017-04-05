@@ -8,6 +8,12 @@
     mc:Ignorable="d">
 
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="0*"/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Button x:Name="button" Grid.ColumnSpan="2" Content="Button" HorizontalAlignment="Left" Margin="85,246,0,0" VerticalAlignment="Top" Height="68" Width="126" Click="button_Click"/>
+        <TextBox x:Name="textBox" Grid.ColumnSpan="2" HorizontalAlignment="Left" Margin="85,361,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="126"/>
 
     </Grid>
 </Page>
